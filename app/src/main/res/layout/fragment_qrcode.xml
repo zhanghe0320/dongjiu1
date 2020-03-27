@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/qrcodefragment"
+    android:weightSum="10"
+    tools:context=".fragment.QrcodeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="二维码扫描界面"
+            android:textSize="30sp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/qrcode_select_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="选择订单"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/qrcode_select_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+
+            android:text="选择产品"
+            android:textSize="30sp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/qrcode_start_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="开始扫码"
+            android:textSize="30sp">
+
+        </TextView>
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:text="结束扫码"-->
+        <!--            android:textSize="30sp">-->
+
+        <!--        </TextView>-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/qrcodefragment_1"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+<!--    <android.support.design.widget.TabLayout-->
+<!--        android:id="@+id/tab_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="34dip"-->
+<!--        android:background="@color/white"-->
+<!--        app:tabBackground="@color/white"-->
+<!--        app:tabGravity="fill"-->
+<!--        app:tabIndicatorHeight="0dip"-->
+<!--        app:tabMinWidth="40dip"-->
+<!--        app:tabMode="fixed"-->
+<!--        app:tabPaddingEnd="5dip"-->
+<!--        app:tabPaddingStart="5dip"-->
+<!--        app:tabSelectedTextColor="@color/wx_head_selected"-->
+<!--        app:tabTextAppearance="@style/tab_head"-->
+<!--        app:tabTextColor="@color/wx_head_default" />-->
+
+<!--    <android.support.v4.view.ViewPager-->
+<!--        android:id="@+id/view_pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="10dip"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/white" />-->
+</LinearLayout>

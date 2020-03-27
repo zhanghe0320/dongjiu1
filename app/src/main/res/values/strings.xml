@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">董酒手持设备</string>
+    <string name="title_activity_three">ThreeActivity</string>
+    <string name="title_activity_login">login</string>
+
+
+    <!--登录界面 -->
+    <string name="login_name">输入账号</string>
+    <string name="login_pwd">输入密码</string>
+    <string name="todo">TODO</string>
+    <string name="logintext">登录</string>
+    <string name="loginsystem">系统设置</string>
+
+
+    <!-- 主页 -->
+    <string name="menu_main">主页</string>
+    <string name="menu_download">下载</string>
+    <string name="menu_upload">上传</string>
+    <string name="menu_query">查询</string>
+    <string name="menu_qrcode">开始扫码</string>
+
+
+    <!-- 主页 -->
+    <string name="home_page">首页</string>
+    <string name="home_download">下载</string>
+    <string name="home_upload">上传</string>
+    <string name="home_query">查询</string>
+    <string name="title_activity_main2_2">Main2Activity_2</string>
+    <string name="title_activity_main3_3">Main3Activity_3</string>
+    <string name="title_activity_main2_4">Main2Activity_4</string>
+    <string name="title_activity_down">DownActivity</string>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="title_activity_query">QueryActivity</string>
+    <string name="title_activity_scan_code">ScanCodeActivity</string>
+
+
+    <string name="cancel">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="confirm">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+    <string name="TODO">todo</string>
+    <string name="title_activity_system">system</string>
+
+
+    <string name="picker_sure">确定</string>
+    <string name="picker_cancel">取消</string>
+    <string name="picker_title">请选择出生日期</string>
+
+    <string name="picker_year">年</string>
+    <string name="picker_month">月</string>
+    <string name="picker_day">日</string>
+    <string name="picker_hour">时</string>
+    <string name="picker_minute">分</string>
+
+    <string name="birthday">出生日期</string>
+    <string name="birthday_hint">请选择出生日期</string>
+    <string name="title_activity_scan_qrcode">ScanQrcodeActivity</string>
+
+
+
+
+
+    <string name="permission_camera">App扫码需要用到拍摄权限</string>
+    <string name="permission_external_storage">App需要用到读写权限</string>
+    <string name="tips_scan_code">将二维码/条形码放入框内，即可自动扫描</string>
+    <string name="qr_code">二维码</string>
+    <string name="bar_code">条形码</string>
+
+
+</resources>

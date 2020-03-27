@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/qrcodefragment2"
+    android:weightSum="10"
+    tools:context=".fragment.QrcodeFragment2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <SurfaceView
+                    android:id="@+id/surfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.dongjiu.utils.zxing.ViewfinderView
+                    android:id="@+id/viewfinderView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cornerColor="@color/colorPrimary"
+                    app:frameColor="@color/colorPrimary"
+                    app:gridHeight="0dp"
+                    app:labelText="@string/tips_scan_code"
+                    app:labelTextLocation="bottom"
+                    app:labelTextSize="@dimen/size_14sp"
+                    app:laserColor="@color/colorAccent"
+                    app:laserStyle="grid"
+                    app:resultPointColor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/ivFlash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="390dp"
+                    android:src="@drawable/flash_selected_selector"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="start">
+
+                <TextView
+                    android:id="@+id/qrcodescan_order"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center"
+                    android:text="扫码订单"
+                    android:textSize="25sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/qrcodescan_noworder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="15dp"
+                    android:layout_toRightOf="@id/qrcodescan_order"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:text="现在的订单xiugaishuj"
+                    android:textSize="25sp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/qrcodescan_allmess"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+            </ListView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="start"
+                >
+
+                <TextView
+                    android:id="@+id/qrcodescan_selectproduct"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:gravity="center"
+                    android:text="更改产品"
+                    android:textSize="25sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/qrcodescan_selectorder"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="150dp"
+                    android:layout_toRightOf="@id/qrcodescan_selectproduct"
+                    android:gravity="center"
+                    android:text="更改订单"
+                    android:textSize="25sp">
+
+                </TextView>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/qrcodescan_back"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text="返回">
+
+            </TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qrcodescan_productmess"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:layout_marginEnd="30dp"
+                android:text="选择产品">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="@dimen/size_18sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/app_name"/>
+    </LinearLayout>
+</LinearLayout>
